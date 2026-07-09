@@ -32,7 +32,7 @@ st.markdown("---")
 @st.cache_resource
 def load_and_train_base_model():
     # Load and clean a subset of the data quickly to train the backend model for the UI
-    df = pd.read_csv('Loan_default.csv')
+    df = pd.read_csv('data/Loan_default.csv', nrows=40000)
     if 'LoanID' in df.columns: df.drop(columns=['LoanID'], inplace=True)
     
     # Quick clean
