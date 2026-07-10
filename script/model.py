@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, classification_report
 print("[*] Starting Stage 3: Prediction Model Training...")
 
 # --- NEW: Read the data first so 'df' exists inside this file ---
-file_name = 'Loan_default.csv'
+file_name = 'data/Loan_default.csv'
 
 if not os.path.exists(file_name):
     raise FileNotFoundError(f"[-] '{file_name}' not found! Place model.py in the same folder as {file_name}.")
